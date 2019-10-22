@@ -127,6 +127,10 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
 * {
   box-sizing: border-box;
 }
@@ -134,15 +138,19 @@ html,
 body {
   height: 100%;
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+}
 header {
   padding: 2%;
 }
 header h1 {
-  color: slateblue;
+  color: #4d4d4d;
   text-align: center;
   font-size: 30px;
 }
 header h2 {
-  color: slateblue;
+  color: #4d4d4d;
   text-align: center;
 }
