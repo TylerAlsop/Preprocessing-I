@@ -30,8 +30,23 @@ html {
 html h1 {
   font-size: 7rem;
 }
+@media (max-width: 500px) {
+  html h1 {
+    font-size: 3rem;
+  }
+}
 html h2 {
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  html h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
 }
 html,
 body {
@@ -49,6 +64,11 @@ nav {
 nav a {
   text-decoration: none;
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 0.8rem;
+  }
 }
 header {
   padding: 2%;
