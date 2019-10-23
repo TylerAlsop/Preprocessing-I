@@ -1,51 +1,51 @@
-// Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+// // Is this working?
+// /* http://meyerweb.com/eric/tools/css/reset/ 
+//    v2.0 | 20110126
+//    License: none (public domain)
+// */
 
-html, body, div, span, applet, object, iframe, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+// html, body, div, span, applet, object, iframe, p, blockquote, pre,
+// a, abbr, acronym, address, big, cite, code,
+// del, dfn, em, img, ins, kbd, q, s, samp,
+// small, strike, strong, sub, sup, tt, var,
+// b, u, i, center,
+// dl, dt, dd, ol, ul, li,
+// fieldset, form, label, legend,
+// table, caption, tbody, tfoot, thead, tr, th, td,
+// article, aside, canvas, details, embed, 
+// figure, figcaption, footer, header, hgroup, 
+// menu, nav, output, ruby, section, summary,
+// time, mark, audio, video {
+// 	margin: 0;
+// 	padding: 0;
+// 	border: 0;
+// 	font-size: 100%;
+// 	font: inherit;
+// 	vertical-align: baseline;
+// }
+// /* HTML5 display-role reset for older browsers */
+// article, aside, details, figcaption, figure, 
+// footer, header, hgroup, menu, nav, section {
+// 	display: block;
+// }
+// body {
+// 	line-height: 1;
+// }
+// ol, ul {
+// 	list-style: none;
+// }
+// blockquote, q {
+// 	quotes: none;
+// }
+// blockquote:before, blockquote:after,
+// q:before, q:after {
+// 	content: '';
+// 	content: none;
+// }
+// table {
+// 	border-collapse: collapse;
+// 	border-spacing: 0;
+// }
 
 
 
@@ -53,13 +53,15 @@ table {
 
 * {
 	box-sizing: border-box;
+	border: solid 1px gray;
 }
 
 
 //Variables
 
-@primary-color: #4d4d4d;
-
+@primary-color: black;
+@secondary-color: #4d4d4d;
+@primary-font-size: 1rem;
 
 
 //Mix-ins
@@ -74,14 +76,28 @@ table {
 	justify-content: center;
 }
 
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
 //Main Less/CSS
 
 html {
 	font-size: 62.5%;
+	
+	h1 {
+		font-size: 7rem;
+	}
+
+	h2 {
+		font-size: 4rem;
+	}
 }
 
 html, body {
 	height: 100%;
+	font-size: @primary-font-size;
 }
 
 body {
@@ -90,7 +106,6 @@ body {
 
 nav {
 	.flex-around();
-
 }
 
 header {
@@ -104,13 +119,26 @@ header {
 	.intro {
 		h1 {
 			color: @primary-color;
-			text-align: center;
-			font-size: 6rem;
 		}
 	
 		h2 {
-			color: @primary-color;
-			text-align: center;
+			color: @secondary-color;
 		}//End Intro-Items
 	} //End Intro
 }//End Header
+
+#about-me {
+	.flex-column();
+}
+
+#skills {
+	.flex-column();
+}
+
+#portfolio {
+	.flex-column();
+}
+
+#connect {
+	.flex-column();
+}
