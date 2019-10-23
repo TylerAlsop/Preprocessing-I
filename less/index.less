@@ -62,6 +62,8 @@
 @primary-color: black;
 @secondary-color: #4d4d4d;
 @primary-font-size: 1rem;
+@primary-background-color: lightgray;
+
 
 
 //Mix-ins
@@ -106,6 +108,12 @@ body {
 
 nav {
 	.flex-around();
+	text-decoration: none;
+
+	a {
+		text-decoration: none;
+		font-size: 1.5rem;
+	}
 }
 
 header {
@@ -123,6 +131,7 @@ header {
 	
 		h2 {
 			color: @secondary-color;
+			text-align: right;
 		}//End Intro-Items
 	} //End Intro
 }//End Header
@@ -139,6 +148,15 @@ header {
 	.flex-column();
 }
 
-#connect {
-	.flex-column();
+.contact {
+	.flex-center();
+
+	.home-contact {
+		.flex-column();
+	}
+
+	.social-media {
+		.flex-column();
+	}
 }
+
