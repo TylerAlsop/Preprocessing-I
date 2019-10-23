@@ -1,1 +1,118 @@
-/* Compile your LESS file! */
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.padding {
+  padding: 3%;
+}
+.margin {
+  margin: 3%;
+}
+.padding-margin {
+  padding: 1%;
+  margin: 2%;
+}
+html {
+  font-size: 62.5%;
+}
+html h1 {
+  font-size: 7rem;
+}
+html h2 {
+  font-size: 4rem;
+}
+html,
+body {
+  height: 100%;
+  font-size: 1rem;
+}
+body {
+  margin: 1% 2%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+header {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+}
+header img {
+  width: 30%;
+  border-radius: 35%;
+  margin: 3%;
+}
+@media (max-width: 1250px) {
+  header img {
+    display: none;
+  }
+}
+header .intro {
+  padding: 1%;
+  margin: 2%;
+  width: 75%;
+}
+header .intro h1 {
+  color: black;
+}
+header .intro h2 {
+  color: #4d4d4d;
+  text-align: right;
+}
+@media (max-width: 1250px) {
+  header .intro {
+    width: 90%;
+  }
+}
+#about-me {
+  display: flex;
+  flex-direction: column;
+}
+#skills {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+}
+#portfolio {
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: lightgray;
+}
+.contact .home-contact {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  margin: 2%;
+}
+.contact .social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact .social-media a {
+  padding: 10px 0px;
+}
