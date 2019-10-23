@@ -83,6 +83,19 @@
 	flex-direction: column;
 }
 
+.padding {
+	padding: 3%;
+}
+
+.margin {
+	margin: 3%;
+}
+
+.padding-margin {
+	padding: 1%;
+	margin: 2%; 
+}
+
 //Main Less/CSS
 
 html {
@@ -121,10 +134,19 @@ header {
 	.flex-center();
 
 	img {
-		border-radius: 25%;
+		width: 30%;
+		border-radius: 35%;
+		.margin();
+		@media (max-width: 1250px) {
+			display: none;
+		}
+	
 	}
 
 	.intro {
+		.padding-margin ();
+		width: 75%;
+
 		h1 {
 			color: @primary-color;
 		}
@@ -133,7 +155,12 @@ header {
 			color: @secondary-color;
 			text-align: right;
 		}//End Intro-Items
+
+		@media (max-width: 1250px) {
+			width: 90%;
+		}
 	} //End Intro
+
 }//End Header
 
 #about-me {
