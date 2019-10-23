@@ -69,7 +69,16 @@ table {
 	justify-content: space-around;
 }
 
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+
 //Main Less/CSS
+
+html {
+	font-size: 62.5%;
+}
 
 html, body {
 	height: 100%;
@@ -86,14 +95,22 @@ nav {
 
 header {
 	padding: 2%;
+	.flex-center();
 
-	h1 {
-		color: @primary-color;
-		text-align: center;
+	img {
+		border-radius: 25%;
 	}
 
-	h2 {
-		color: @primary-color;
-		text-align: center;
-	}
-}
+	.intro {
+		h1 {
+			color: @primary-color;
+			text-align: center;
+			font-size: 6rem;
+		}
+	
+		h2 {
+			color: @primary-color;
+			text-align: center;
+		}//End Intro-Items
+	} //End Intro
+}//End Header

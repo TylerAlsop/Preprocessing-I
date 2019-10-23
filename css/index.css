@@ -128,6 +128,13 @@ table {
   display: flex;
   justify-content: space-around;
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
@@ -141,12 +148,18 @@ nav {
 }
 header {
   padding: 2%;
+  display: flex;
+  justify-content: center;
 }
-header h1 {
+header img {
+  border-radius: 25%;
+}
+header .intro h1 {
   color: #4d4d4d;
   text-align: center;
+  font-size: 6rem;
 }
-header h2 {
+header .intro h2 {
   color: #4d4d4d;
   text-align: center;
 }
