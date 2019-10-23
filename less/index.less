@@ -132,6 +132,7 @@ nav {
 header {
 	padding: 2%;
 	.flex-center();
+	background-color: @primary-background-color;
 
 	img {
 		width: 30%;
@@ -165,10 +166,13 @@ header {
 
 #about-me {
 	.flex-column();
+
 }
 
 #skills {
 	.flex-column();
+	background-color: @primary-background-color;
+
 }
 
 #portfolio {
@@ -177,13 +181,18 @@ header {
 
 .contact {
 	.flex-center();
+	justify-content: space-evenly;
+	background-color: @primary-background-color;
+
 
 	.home-contact {
 		.flex-column();
+		.padding-margin();
 	}
 
 	.social-media {
 		.flex-column();
+		justify-content: space-around;
 	}
 }
 

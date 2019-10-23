@@ -55,6 +55,7 @@ header {
   padding: 2%;
   display: flex;
   justify-content: center;
+  background-color: lightgray;
 }
 header img {
   width: 30%;
@@ -90,6 +91,7 @@ header .intro h2 {
 #skills {
   display: flex;
   flex-direction: column;
+  background-color: lightgray;
 }
 #portfolio {
   display: flex;
@@ -98,12 +100,17 @@ header .intro h2 {
 .contact {
   display: flex;
   justify-content: center;
+  justify-content: space-evenly;
+  background-color: lightgray;
 }
 .contact .home-contact {
   display: flex;
   flex-direction: column;
+  padding: 1%;
+  margin: 2%;
 }
 .contact .social-media {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
