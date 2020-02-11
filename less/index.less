@@ -103,10 +103,20 @@ html {
 	
 	h1 {
 		font-size: 7rem;
+		@media (max-width: 500px) {
+			font-size: 3rem;
+		}
 	}
 
 	h2 {
 		font-size: 4rem;
+		@media (max-width: 500px) {
+			font-size: 2rem;
+		}
+	}
+
+	@media (max-width: 500px) {
+		font-size: 50%;
 	}
 }
 
@@ -126,6 +136,9 @@ nav {
 	a {
 		text-decoration: none;
 		font-size: 1.5rem;
+		@media (max-width: 500px) {
+			font-size: 0.8rem;
+		}
 	}
 }
 
@@ -150,6 +163,7 @@ header {
 
 		h1 {
 			color: @primary-color;
+			
 		}
 	
 		h2 {
